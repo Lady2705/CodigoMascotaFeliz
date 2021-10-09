@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.persistencia\\MascotaFeliz.app.persistencia.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
+        "projectName": "MascotaFeliz.app.dominio",
+        "projectPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
+        "packagesPath": "C:\\Users\\ladyr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ladyr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.persistencia\\MascotaFeliz.app.persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.persistencia\\MascotaFeliz.app.persistencia.csproj",
+        "projectName": "MascotaFeliz.app.persistencia",
+        "projectPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.persistencia\\MascotaFeliz.app.persistencia.csproj",
+        "packagesPath": "C:\\Users\\ladyr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ladyr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj": {
+                "projectPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.entityFrameworkcore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.entityFrameworkcore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.entityFrameworkcore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.entityFrameworkcore.sqlserver": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

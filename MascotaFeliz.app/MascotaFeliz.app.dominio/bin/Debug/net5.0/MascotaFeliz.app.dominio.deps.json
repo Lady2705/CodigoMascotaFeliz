@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "MascotaFeliz.app.dominio/1.0.0": {
+        "runtime": {
+          "MascotaFeliz.app.dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MascotaFeliz.app.dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
