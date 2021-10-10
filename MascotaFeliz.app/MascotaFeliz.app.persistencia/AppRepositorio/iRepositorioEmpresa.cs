@@ -9,6 +9,6 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         bool BorrarEmpresa(int Nit);
         bool ActualizarEmpresa(Empresa empresa);
         IEnumerable<Empresa> ConsultarEmpresa();
-        Medicos ConsultarEmpresa(int Nit);  
+        Empresa ConsultarEmpresa(int Nit);  
     }
 }

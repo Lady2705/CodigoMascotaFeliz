@@ -55,11 +55,11 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
             {
                 var BusquedaSolicitudAtencion= contexto.solicitudAtencion.SingleOrDefault(o=>o.IdSolicitudAtencion==solicitudAtencion.IdSolicitudAtencion);
-                if(!(BusquedaMedico==null))
+                if(!(BusquedaSolicitudAtencion==null))
                 { 
-                    BusquedaSolicitudAtencion.Nombre=solicitudAtencion.Nombre;
-                    BusquedaSolicitudAtencion.Fecha=solicitudAtencion.fecha;
-                    BusquedaSolicitudAtencion.Descripcion=solicitudAtencion.Fecha;
+                    BusquedaSolicitudAtencion.NombreSolicitud=solicitudAtencion.NombreSolicitud;
+                    BusquedaSolicitudAtencion.FechaSolicitud=solicitudAtencion.FechaSolicitud;
+                    BusquedaSolicitudAtencion.DetalleSolicitud=solicitudAtencion.DetalleSolicitud;
                     valorRetorno=true;
                  }
                 return valorRetorno;
@@ -91,7 +91,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
             {
-              var ListaSolicitudAtencion=(from p in contexto. where p.IdSolicitudAtencion==IdSolicitudAtencion select p).First();
+              var ListaSolicitudAtencion=(from p in contexto.solicitudAtencion where p.IdSolicitudAtencion==IdSolicitudAtencion select p).First();
               return ListaSolicitudAtencion;
               
              }

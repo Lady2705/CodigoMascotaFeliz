@@ -18,11 +18,11 @@ namespace MascotaFeliz.app.dominio
        public int IdMascota { get; set; }
 
        
-       [Column("Nombre")]
+       [Column("NombreMascota")]
        [Required]
        [StringLength(50,MinimumLength=5)]
 
-       public string Nombre { get; set; }
+       public string NombreMascota { get; set; }
        
        
        [Column("ColorOjos")]

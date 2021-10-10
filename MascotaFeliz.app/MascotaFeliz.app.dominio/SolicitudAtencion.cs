@@ -9,27 +9,28 @@ using System.Text;
 
 namespace MascotaFeliz.app.dominio
 {
-    [Table("SolicitudAtencion")]
+    [Table("SolicitudAtencionDb")]
 
     public class SolicitudAtencion
     {
       [Key]
       [Column("IdSolicitudAtencion")]
-      public int Id { get; set; }
+      public int IdSolicitudAtencion { get; set; }
 
        [Required]
-       [Column("NombreMascota")]
+       [Column("NombreSolicitud")]
        [StringLength(50,MinimumLength=5)]
+       public string  NombreSolicitud{ get; set; }
 
        [Required]
-       [Column("Fecha")]
+       [Column("FechaSolicitud")]
        [StringLength(20,MinimumLength=5)]
-
+       public string FechaSolicitud  { get; set; }
        [Required]
-       [Column("Descripcion")]
-       [StringLength(50,MinimumLength=5)]
+       [Column("DetalleSolicitud")]
+       [StringLength(40,MinimumLength=5)]
 
-       public string NombreMascota { get; set; }
+       public string DetalleSolicitud { get; set; }
 
         
     }

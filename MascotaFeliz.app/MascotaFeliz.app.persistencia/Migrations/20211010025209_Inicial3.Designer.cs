@@ -4,14 +4,16 @@ using MascotaFeliz.app.persistencia.AppData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MascotaFeliz.app.persistencia.Migrations
 {
     [DbContext(typeof(EfAppContext))]
-    partial class EfAppContextModelSnapshot : ModelSnapshot
+    [Migration("20211010025209_Inicial3")]
+    partial class Inicial3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

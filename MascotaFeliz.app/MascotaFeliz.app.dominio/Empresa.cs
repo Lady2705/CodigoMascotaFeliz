@@ -18,21 +18,22 @@ namespace MascotaFeliz.app.dominio
        public int Nit { get; set; }
 
        [Required]
-       [Column("Nombre")]
+       [Column("NombreEmpresa")]
        [StringLength(50, MinimumLength=5)]
 
-       public string Nombre { get; set; }
+       public string NombreEmpresa { get; set; }
        
        [Required]
-       [Column("Direccion")]
+       [Column("DireccionEmpresa")]
+       [StringLength(50, MinimumLength=5)]
 
-       public int Direccion { get; set; }
+       public string DireccionEmpresa { get; set; }
        
        [Required]
-       [Column("Telefono")]
+       [Column("TelefonoEmpresa")]
        [StringLength(12, MinimumLength=5)]
 
-       public string Telefono { get; set; }   
+       public string TelefonoEmpresa { get; set; }   
 
        [ForeignKey("IdMedico")]
 

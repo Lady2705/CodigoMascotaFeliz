@@ -15,13 +15,13 @@ namespace MascotaFeliz.app.dominio
     {
         [Column("IdPersona")]
         [Key]
-        public int Id { get; set; }
+        public int IdPersona { get; set; }
 
         
         [Required]
-        [Column("Nombre")]
+        [Column("NombrePersona")]
         [StringLength(50, MinimumLength=5)]
-        public string Nombre { get; set; }
+        public string NombrePersona { get; set; }
 
          [Required]
         [Column("Apellido")]
@@ -32,5 +32,10 @@ namespace MascotaFeliz.app.dominio
         [Column("Telefono")]
         [StringLength(20, MinimumLength=5)]
         public string Telefono { get; set; }
+        
+        [Required]
+        [Column("Direccion")]
+        [StringLength(50, MinimumLength=5)]
+        public string Direccion { get; set; }
     }
 }

@@ -19,10 +19,10 @@ namespace MascotaFeliz.app.dominio
         public int IdPropietario { get; set; }
 
         [Required]
-        [Column("Nombre")]
+        [Column("NombrePropietario")]
         [StringLength(50,MinimumLength=5)]
 
-        public string Nombre { get; set; }
+        public string NombrePropietario { get; set; }
 
         [Required]
         [Column("Telefono")]

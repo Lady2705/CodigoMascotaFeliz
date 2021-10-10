@@ -6,7 +6,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
 {
     public class RepositorioRegistroAtencion : iRepositorioRegistroAtencion
     {
-        bool valorRetorno=false;
+       bool valorRetorno=false;
         //Ingresar informacion 
 
         public bool IngresarRegistroAtencion(RegistroAtencion registroAtencion)
@@ -15,7 +15,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
           using(AppData.EfAppContext contexto = new AppData.EfAppContext())
          { 
             //Variable de tipo anonima con var
-            var RegistroAtencion=contexto.Add(RegistroAtencion);
+            var IngresarRegistroAtencion=contexto.Add(registroAtencion);
             contexto.SaveChanges();
             if(contexto.SaveChanges()>=1)
             {
@@ -31,7 +31,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
          using(AppData.EfAppContext contexto = new AppData.EfAppContext()) 
           {    
             var BusquedaRegistroAtencion=(from p in contexto.registroAtencion where p.IdRegistroAtencion==IdRegistroAtencion select p);
-            if (!(BusquedaSolicitudAtencion==null))
+            if (!(BusquedaRegistroAtencion==null))
             {
              contexto.Remove(BusquedaRegistroAtencion);
              contexto.SaveChanges();
@@ -49,7 +49,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         /// </param name="RegistroAtencion"></param>
         /// <returns>bool</returns>
         
-        public bool ActualizarMedicoRegistroAtencion(RegistroAtencion registroAtencion))
+        public bool ActualizarRegistroAtencion(RegistroAtencion registroAtencion)
         {
             
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
@@ -57,9 +57,9 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaRegistroAtencion= contexto.registroAtencion.SingleOrDefault(o=>o.IdRegistroAtencion==registroAtencion.IdRegistroAtencion);
                 if(!(BusquedaRegistroAtencion==null))
                 { 
-                    BusquedaRegistroAtencion.Nombre=registroAtencion.Nombre;
-                    BusquedaRegistroAtencion.Fecha=registroAtencion.Fecha;
-                    BusquedaRegistroAtencion.Descripcion=registroAtencion.Descripcion;
+                    BusquedaRegistroAtencion.NombreRegistro=registroAtencion.NombreRegistro;
+                    BusquedaRegistroAtencion.FechaRegistro=registroAtencion.FechaRegistro;
+                    BusquedaRegistroAtencion.DescripcionRegistro=registroAtencion.DescripcionRegistro;
 
                     valorRetorno=true;
                  }
@@ -87,7 +87,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         }
         //Consultar RegistroAtencion
 
-        public Medicos ConsultarRegistroAtencion(int IdRegistroAtencion)
+        public RegistroAtencion ConsultarRegistroAtencion(int IdRegistroAtencion)
         { 
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
@@ -96,7 +96,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
               return ListaRegistroAtencion;
               
              }
-         }
+        }
  
     }
 }

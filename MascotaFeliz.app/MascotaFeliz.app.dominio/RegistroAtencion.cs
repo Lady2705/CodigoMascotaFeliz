@@ -13,21 +13,24 @@ namespace MascotaFeliz.app.dominio
     {    
       [Key]
       [Column("IdRegistroAtencion")]
-      public int IdAnimal { get; set; }
+      public int IdRegistroAtencion { get; set; }
 
        [Required]
-       [Column("Nombre")]
+       [Column("NombreRegistro")]
        [StringLength(50,MinimumLength=5)]
+       public string NombreRegistro { get; set; }
 
       [Required]
-       [Column("Fecha")]
+       [Column("FechaRegistro")]
        [StringLength(20,MinimumLength=5)]
+       public string FechaRegistro { get; set; }
 
        [Required]
-       [Column("Descripcion")]
+       [Column("DescripcionRegistro")]
        [StringLength(50,MinimumLength=5)]
+       public string DescripcionRegistro { get; set; }
 
-       public string Nombre { get; set; }
+       
 
        [ForeignKey("IdPropietario")]
 

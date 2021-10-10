@@ -17,7 +17,7 @@ namespace MascotaFeliz.app.dominio
        public int IdMedico { get; set; }
 
        [Required]
-       [Column("Nombre")]
+       [Column("NombreMedico")]
        [StringLength(50, MinimumLength=5)]
 
        public string Nombre { get; set; }

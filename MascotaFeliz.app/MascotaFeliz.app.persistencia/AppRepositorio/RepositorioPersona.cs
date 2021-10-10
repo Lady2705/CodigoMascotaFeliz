@@ -57,7 +57,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaPersona= contexto.persona.SingleOrDefault(o=>o.IdPersona==persona.IdPersona);
                 if(!(BusquedaPersona==null))
                 { 
-                    BusquedaPersona.Nombre=persona.Nombre;
+                    BusquedaPersona.NombrePersona=persona.NombrePersona;               
                     BusquedaPersona.Telefono=persona.Telefono;
                     BusquedaPersona.Direccion=persona.Direccion;
                     valorRetorno=true;
@@ -86,7 +86,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         }
         //Consultar persona
 
-        public Persona ConsultarPersona(int IdPropieario)
+        public Persona ConsultarPersona(int IdPersona)
         { 
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())

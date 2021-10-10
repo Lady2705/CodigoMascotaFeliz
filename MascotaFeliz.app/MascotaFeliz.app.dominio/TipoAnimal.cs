@@ -14,7 +14,7 @@ namespace MascotaFeliz.app.dominio
     {
       [Key]
       [Column("IdTipoAnimal")]
-      public int IdAnimal { get; set; }
+      public int IdTipoAnimal { get; set; }
 
       [Column("Nombre")]
       [Required]

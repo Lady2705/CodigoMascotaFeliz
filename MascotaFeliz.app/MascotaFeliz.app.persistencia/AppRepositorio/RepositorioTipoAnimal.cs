@@ -14,7 +14,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
           //Abriendo y Liebrando Recursos
           using(AppData.EfAppContext contexto = new AppData.EfAppContext())
          { 
-            //Variable de tipo anonima con var
+            //Variable de tipoAnimal con var
             var RegistroTipoAnimal=contexto.Add(tipoAnimal);
             contexto.SaveChanges();
             if(contexto.SaveChanges()>=1)
@@ -57,7 +57,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaTipoAnimal= contexto.tipoAnimal.SingleOrDefault(o=>o.IdTipoAnimal==tipoAnimal.IdTipoAnimal);
                 if(!(BusquedaTipoAnimal==null))
                 { 
-                    BusquedaTipoAnimal.Nombre=TipoAnimal.Nombre;
+                    BusquedaTipoAnimal.Nombre=tipoAnimal.Nombre;
                     valorRetorno=true;
                  }
                 return valorRetorno;
@@ -84,7 +84,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         }
         //Consultar TipoAnimal
 
-        public Medicos ConsultarTipoAnimal(int IdTipoAnimal)
+        public TipoAnimal ConsultarTipoAnimal(int IdTipoAnimal)
         { 
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())

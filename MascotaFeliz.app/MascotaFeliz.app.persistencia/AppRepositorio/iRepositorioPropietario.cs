@@ -9,7 +9,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         bool BorrarPropietario(int IdPropietario);
         bool ActualizarPropietario(Propietario propietario);
         IEnumerable<Propietario> ConsultarPropietario();
-        Medicos ConsultarPropietario(int IdPropietario);
+        Propietario ConsultarPropietario(int IdPropietario);
          
     }
 }

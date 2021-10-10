@@ -57,7 +57,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaPropietario= contexto.propietario.SingleOrDefault(o=>o.IdPropietario==propietario.IdPropietario);
                 if(!(BusquedaPropietario==null))
                 { 
-                    BusquedaPropietario.Nombre=propietario.Nombre;
+                    BusquedaPropietario.NombrePropietario=propietario.NombrePropietario;
                     BusquedaPropietario.Telefono=propietario.Telefono;
                     BusquedaPropietario.Direccion=propietario.Direccion;
                     valorRetorno=true;
@@ -86,7 +86,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         }
         //Consultar propietario
 
-        public Propietario ConsultarPropietario(int IdPropieario)
+        public Propietario ConsultarPropietario(int IdPropietario)
         { 
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())

@@ -49,7 +49,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         /// </param name="Empresa"></param>
         /// <returns>bool</returns>
         
-        public bool ActualizarEmpresa(Empresa empresa))
+        public bool ActualizarEmpresa(Empresa empresa)
         {
             
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
@@ -57,8 +57,9 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaEmpresa= contexto.empresa.SingleOrDefault(o=>o.Nit==empresa.Nit);
                 if(!(BusquedaEmpresa==null))
                 { 
-                    BusquedaEmpresa.Nombre=empresa.Nombre;
-                    BusquedaEmpresa.Direccion=empresa.Direccion;
+                    BusquedaEmpresa.NombreEmpresa=empresa.NombreEmpresa;
+                    BusquedaEmpresa.DireccionEmpresa=empresa.DireccionEmpresa;
+                    BusquedaEmpresa.TelefonoEmpresa=empresa.TelefonoEmpresa;
                     valorRetorno=true;
                  }
                 return valorRetorno;
@@ -90,7 +91,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
             {
-              var ListaEmpresa=(from p in contexto.medico where p.Nit==Nit select p).First();
+              var ListaEmpresa=(from p in contexto.empresa where p.Nit==Nit select p).First();
               return ListaEmpresa;
               
              }

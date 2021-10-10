@@ -54,10 +54,10 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
             
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
             {
-                var BusquedaMascota= contexto.mascota.SingleOrDefault(o=>o.IdMascota==medicos.IdMascota);
+                var BusquedaMascota= contexto.mascota.SingleOrDefault(o=>o.IdMascota==mascota.IdMascota);
                 if(!(BusquedaMascota==null))
                 { 
-                    BusquedaMascota.Nombre=mascota.Nombre;
+                    BusquedaMascota.NombreMascota=mascota.NombreMascota ;
                     BusquedaMascota.ColorOjos=mascota.ColorOjos;
                     BusquedaMascota.ColorPiel=mascota.ColorPiel;
                     BusquedaMascota.Estatura=mascota.Estatura;

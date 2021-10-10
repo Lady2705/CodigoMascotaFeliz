@@ -9,7 +9,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         bool BorrarRegistroAtencion(int IdRegistroAtencion);
         bool ActualizarRegistroAtencion(RegistroAtencion registroAtencion);
         IEnumerable<RegistroAtencion> ConsultarRegistroAtencion();
-        Medicos ConsultarRegistroAtencio(int IdRegistroAtencion);
+        RegistroAtencion ConsultarRegistroAtencion(int IdRegistroAtencion);
          
     }
 }
