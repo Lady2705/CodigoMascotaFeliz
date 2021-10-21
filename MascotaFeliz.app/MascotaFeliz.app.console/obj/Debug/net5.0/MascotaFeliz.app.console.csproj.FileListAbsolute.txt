@@ -197,7 +197,6 @@ C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.AssemblyInfoInputs.cache
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.AssemblyInfo.cs
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.csproj.CoreCompileInputs.cache
-C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.csproj.CopyComplete
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.dll
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\ref\MascotaFeliz.app.console.dll
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.console\obj\Debug\net5.0\MascotaFeliz.app.console.pdb

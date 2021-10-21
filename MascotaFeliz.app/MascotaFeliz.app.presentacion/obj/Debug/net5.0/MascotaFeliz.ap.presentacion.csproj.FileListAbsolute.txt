@@ -159,3 +159,4 @@ C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.presentacion\obj\Debug\n
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.presentacion\obj\Debug\net5.0\MascotaFeliz.ap.presentacion.csproj.CopyComplete
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.presentacion\obj\Debug\net5.0\MascotaFeliz.ap.presentacion.genruntimeconfig.cache
 C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.presentacion\obj\Debug\net5.0\Razor\Pages\Contacto.cshtml.g.cs
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.presentacion\obj\Debug\net5.0\Razor\Pages\Cliente.cshtml.g.cs

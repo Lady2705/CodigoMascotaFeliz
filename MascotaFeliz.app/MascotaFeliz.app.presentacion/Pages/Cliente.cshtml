@@ -1,0 +1,182 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MascotaFelizPresentacion.app.pagina</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/clientes.css" />
+</head>
+<body>
+
+    <div class="page-banner" style="background-image: url('img/c.png')">        
+    </div>
+
+ <div class="contenedor-formularios">
+      <div class="caja-contenedor">
+      <li class="tab1"><a href="/clientes">Datos</a></li>
+      
+      </div>
+
+    
+  <div class="contenido-tab">
+    
+    <div id="iniciar-sesion">
+      <h1>Clientes</h1>
+      <form action="#" method="POST">
+        <div class="contenedor-input">
+          <label>
+            Id  <span class="req">*</span>
+          </label>
+          <input type="text" required>
+        </div>
+
+        <div class="contenedor-input">
+            <label>
+              Nombre <span class="req">*</span>
+            </label>
+            <input type="text" required>
+          </div>  
+
+        <div class="contenedor-input">
+            <label>
+              Apellido <span class="req">*</span>
+            </label>
+            <input type="text" required>
+          </div>
+          
+         <div class="contenedor-input">
+            <label>
+              Cedula <span class="req">*</span>
+            </label>
+            <input type="text" required>
+          </div>
+          <div class="contenedor-input">
+            <label>
+              Telefono <span class="req">*</span>
+            </label>
+            <input type="text" required>
+          </div>
+          <div class="contenedor-input">
+            <label>
+              Direccion <span class="req">*</span>
+            </label>
+            <input type="text" required>
+          </div>
+          <br>
+          <br>
+        <div class="botones">
+        <input type="submit" class="button button-block" value="ingresar">
+        <input type="submit" class="button button-block" value="actualizar">
+        <input type="submit" class="button button-block" value="consultar">
+        <input type="submit" class="button button-block" value="borrar">
+        </div>
+
+      </form>
+  </div> 
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+       <br>
+        </div>
+</div>
+      <br>
+      <br>
+      <br>
+      <h1>lista de propietarios</h1>
+      <br>
+      <br>
+    <table class="tabla-cli">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Telefono</th>
+          <th>Direcciom</th>
+          <th>Id.animal</th>
+        </tr> 
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        
+      </table>
+
+
+        <!-- pet -->
+<div id="pet" class="pet">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div  class="titlepage">
+          <h2> ¿Cómo <strong class="llow">podemos ayudarte?</strong> </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
+        <div class="pet_shop">
+          <h3>MÁS DE 14 AÑOS DE EXPERIENCIA</h3>
+          <p>Buscamos complementarios todas las ayudas diagnósticas, profesionales
+             y médicos veterinarios necesarios para aplicar
+             la filosofía del problema orientado al diagnóstico, buscamos siempre mejorar.
+             somos una empresa innovadora del sector veterinario que realiza servicios 
+             especializados en ecografía, radiografías, cirugías general, ortopedia y neurocirugía. 
+             Siempre a la vanguardia en tecnología y conocimientos </p>
+        </div>
+      </div>
+       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 ">
+        <div class="pet_img">
+         <figure><img src="img/f2.png" alt=""/></figure>
+         <span>01</span>
+        </div>
+      </div>
+       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 ">
+        <div class="pet_img margin_top">
+         <figure><img src="img/f1.png" alt=""/></figure>
+         <span>02</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end pet -->
+
+</body>
+</html>
