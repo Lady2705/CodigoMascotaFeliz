@@ -2,3 +2,125 @@
 @model MascotaFeliz.app.presentacion.page.CitaModel
 @{
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MascotaFelizPresentacion.app.pagina</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/mascotas.css" />
+</head>
+<body>
+ 
+    <div class="page-banner" style="background-image: url('/img/a.png')">        
+    </div>
+      
+
+
+   <br>
+      <br>
+      <br>
+      <br>
+
+    <div class="content">
+        <h1 class="logo">Ingresar <span>Mascota</span></h1>
+        <div class="Form-pet">
+            <div class="contact-form">
+                
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label>Color de ojos</label>
+                        <input type="text" name="eyes">
+                    </p>
+                    <p>
+                        <label>Color Pelaje</label>
+                        <input type="text" name="hair">
+                    </p>
+                    <p>
+                        <label>Estatura</label>
+                        <input type="text" name="altura">
+                    </p>
+                    <p>
+                        <label>Peso</label>
+                        <input type="text" name="peso">
+                    </p>
+                    <p>
+                        <label>Frecuencia Cardiaca(Latidos por minuto)</label>
+                        <input type="text" name="FrecuenciaC">
+                    </p>
+                    <p><label>Frecuencia Respiratoria(mm Hg)</label>
+                    <input type="text" name="FrecuenciaR">
+                    </p>
+                    <p>
+                        <label>Id Dueño</label>
+                        <input type="text" name="dueño">
+                    </p>
+                    <p class="block">
+                        <button type="submit">
+                            Agregar Mascota
+                        </button>
+                    </p>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>lista de mascotas</h1>
+    <table class="tabla">
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Color Ojos</th>
+          <th>Color Pelaje</th>
+          <th>F.Cardiaca</th>
+          <th>F.Respiratoria</th>
+        </tr> 
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+      </table>
+
+    <br>
+    <br>
+    <br>   
+ </body>   
+ </html>

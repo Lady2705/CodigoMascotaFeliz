@@ -1,0 +1,84 @@
+@page
+@model MascotaFeliz.app.presentacion.page.Contactomodel
+@{
+    ViewData["Title"] = "contacto";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MascotaFelizPresentacion.app.pagina</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/contacto.css" />
+</head>
+<body>
+<div class="section-container no-padding">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7957.6115876872345!2d-75.93975335294799!3d4.257988629810077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1633705951241!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="map"></div>
+            </div>
+            <div class="col-xs-12">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="" class="reveal-content contact-form">
+                            <div class="form-group">
+                                <input type="name" class="form-control" id="name" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </form>
+                    </div>
+
+
+                    <div class="col-md-5 col-md-offset-1">
+                            
+                        <h3>Head Office</h3>
+                        
+                        <div>
+                            <p>42 rue Rouelle <br/>75015 Paris FRANCE</p>
+                        </div>
+                        <div>
+                            <p>contact@mybusiness.com<br>+331 45 31 64 32</p>
+                        </div>
+                    
+                        <div>
+                            <h3>Employment</h3>
+                        </div>
+                        <div>
+                            <p>To apply for a job with our team, please feel free to send us your Linkedin profile link
+                                ou CV to : employment@mybusiness.com</p>
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+    
+</body>
+
+</html>
