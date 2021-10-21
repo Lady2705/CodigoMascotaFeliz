@@ -9,33 +9,44 @@ using System.Text;
 
 namespace MascotaFeliz.app.dominio
 {
-    [Table("PersonaDb")]  
+    [Table("PersonaDb")]
 
     public class Persona
     {
-        [Column("IdPersona")]
+        [Column("Id")]
         [Key]
-        public int IdPersona { get; set; }
+      
+        public int Id { get; set; }
 
-        
+
         [Required]
-        [Column("NombrePersona")]
-        [StringLength(50, MinimumLength=5)]
-        public string NombrePersona { get; set; }
+        [Column("Nombre")]
+        [StringLength(50, MinimumLength = 5)]
+        public string Nombre { get; set; }
 
-         [Required]
+        [Required]
         [Column("Apellido")]
-        [StringLength(50, MinimumLength=5)]
+        [StringLength(50, MinimumLength = 5)]
         public string Apellido { get; set; }
 
-         [Required]
+        [Required]
         [Column("Telefono")]
-        [StringLength(20, MinimumLength=5)]
+        [StringLength(20, MinimumLength = 5)]
         public string Telefono { get; set; }
-        
+
         [Required]
         [Column("Direccion")]
-        [StringLength(50, MinimumLength=5)]
+        [StringLength(50, MinimumLength = 5)]
         public string Direccion { get; set; }
+
+         public Persona(int id, string nombre, string apellido, string telefono, string direccion)
+        {
+            this.Id = id;
+            this.Nombre = nombre;
+            this.Apellido = apellido;
+            this.Telefono = telefono;
+            this.Direccion = direccion;
+
+        }
     }
 }

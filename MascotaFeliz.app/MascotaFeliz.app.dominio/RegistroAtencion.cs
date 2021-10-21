@@ -32,10 +32,11 @@ namespace MascotaFeliz.app.dominio
 
        
 
-       [ForeignKey("IdPropietario")]
+       
+       
+       [ForeignKey("IdSolicitudAtencio")]
 
-       public virtual Propietario Propietario { get; set; }
-
+        public virtual SolicitudAtencion SolicitudAtencion { get; set; }
 
 
   

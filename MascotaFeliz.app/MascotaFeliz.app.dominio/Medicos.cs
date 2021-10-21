@@ -10,32 +10,41 @@ namespace MascotaFeliz.app.dominio
 {
     [Table("MedicosDb")]
 
-    public class Medicos
+    public class Medicos : Persona
     {
-       [Column("IdMedico")]
-       [Key]
-       public int IdMedico { get; set; }
+        [Column("IdMedico")]
+        public int IdMedico { get; set; }
 
-       [Required]
-       [Column("NombreMedico")]
-       [StringLength(50, MinimumLength=5)]
+        [Required]
+        [Column("TarjetaProfecional")]
 
-       public string Nombre { get; set; }
-       
-       [Required]
-       [Column("TarjetaProfecional")]
+        public int TarjetaProfecional { get; set; }
 
-       public int TarjetaProfecional { get; set; }
-       
-       [Required]
-       [Column("Especialidad")]
-       [StringLength(20, MinimumLength=5)]
+        [Required]
+        [Column("Especialidad")]
+        [StringLength(20, MinimumLength = 5)]
 
-       public string Especialidad { get; set; }   
+        public string Especialidad { get; set; }
 
-       [ForeignKey("IdAnimal")]
+        [ForeignKey("IdAnimal")]
 
-       public virtual TipoAnimal TipoAnimal { get; set; }
-       
+        public virtual TipoAnimal TipoAnimal { get; set; }
+
+        [ForeignKey("Nit")]
+
+        public virtual Empresa Empresa { get; set; }
+
+        
+        public Medicos(int Id, string Nombre, string Apellido, string Direccion, string Telefono, int idMedico, int tarjetaProfecional, string especialidad) : base(Id, Nombre, Apellido, Direccion, Telefono)
+        {
+            this.IdMedico = idMedico;
+            this.TarjetaProfecional = tarjetaProfecional;
+            this.Especialidad = especialidad;
+
+
+
         }
+
+
+    }
 }

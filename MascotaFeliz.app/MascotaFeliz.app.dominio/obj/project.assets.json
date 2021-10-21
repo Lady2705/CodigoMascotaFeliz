@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
+      "projectUniqueName": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\ds\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
       "projectName": "MascotaFeliz.app.dominio",
-      "projectPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
+      "projectPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\ds\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\MascotaFeliz.app.dominio.csproj",
       "packagesPath": "C:\\Users\\ladyr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\obj\\",
+      "outputPath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\ds\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ladyr\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -35,9 +35,7 @@ namespace MascotaFeliz.app.dominio
 
        public string TelefonoEmpresa { get; set; }   
 
-       [ForeignKey("IdMedico")]
-
-       public virtual Medicos Medicos { get; set; }
+       
        
     }
         

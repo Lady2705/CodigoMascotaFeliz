@@ -9,19 +9,15 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
         bool valorRetorno=false;
         //Ingresar informacion 
 
-        public bool IngresarMedico(Medicos medicos)
+        public Medicos IngresarMedico(Medicos medicos)
         { 
           //Abriendo y Liebrando Recursos
           using(AppData.EfAppContext contexto = new AppData.EfAppContext())
          { 
             //Variable de tipo anonima con var
-            var RegistroMedico=contexto.Add(medicos);
+            contexto.medicos.Add(medicos);
             contexto.SaveChanges();
-            if(contexto.SaveChanges()>=1)
-            {
-                valorRetorno=true;
-             }
-            return valorRetorno;
+             return medicos;
          }
         }
             //Borrar Medico
@@ -35,7 +31,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
             {
              contexto.Remove(BusquedaMedico);
              contexto.SaveChanges();
-             valorRetorno=true;
+             valorRetorno=true; 
 
             }
             return valorRetorno;
@@ -43,25 +39,26 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
          
         }
         
-        ///<summary> 
-        ///Actualizar Medico para, actualizar informacion de medicos segun sus datos 
-        /// </summary>
-        /// </param name="Medico"></param>
-        /// <returns>bool</returns>
         
-        public bool ActualizarMedico(Medicos medicos)
+        
+        public Medicos ActualizarMedico(Medicos medicos)
         {
             
             using(AppData.EfAppContext contexto = new AppData.EfAppContext())
             {
                 var BusquedaMedico= contexto.medicos.SingleOrDefault(o=>o.IdMedico==medicos.IdMedico);
-                if(!(BusquedaMedico==null))
+                if(BusquedaMedico!=null)
                 { 
                     BusquedaMedico.Nombre=medicos.Nombre;
+                    BusquedaMedico.Apellido=medicos.Apellido;
+                    BusquedaMedico.Direccion=medicos.Direccion;
+                    BusquedaMedico.Telefono=medicos.Telefono;
+                    BusquedaMedico.Especialidad=medicos.Especialidad;
                     BusquedaMedico.TarjetaProfecional=medicos.TarjetaProfecional;
-                    valorRetorno=true;
+                    contexto.SaveChanges();
+                    
                  }
-                return valorRetorno;
+                return BusquedaMedico;
              }
 
         }
@@ -94,6 +91,11 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
               return ListaMedicos;
               
              }
+         }
+
+         public Medicos BuscarMedicoPorId(int IdMedico){
+           using (AppData.EfAppContext contexto = new AppData.EfAppContext())
+           return contexto.medicos.SingleOrDefault(s=>s.IdMedico==IdMedico);
          }
 
     }   

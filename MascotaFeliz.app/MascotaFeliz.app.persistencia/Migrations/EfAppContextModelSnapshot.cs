@@ -33,9 +33,6 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("DireccionEmpresa");
 
-                    b.Property<int?>("IdMedico")
-                        .HasColumnType("int");
-
                     b.Property<string>("NombreEmpresa")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -49,8 +46,6 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnName("TelefonoEmpresa");
 
                     b.HasKey("Nit");
-
-                    b.HasIndex("IdMedico");
 
                     b.ToTable("EmpresaDb");
                 });
@@ -87,7 +82,7 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("int")
                         .HasColumnName("FrecuenciaRespiratoria");
 
-                    b.Property<int?>("IdPropietario")
+                    b.Property<int?>("IdAnimal")
                         .HasColumnType("int");
 
                     b.Property<string>("NombreMascota")
@@ -102,51 +97,17 @@ namespace MascotaFeliz.app.persistencia.Migrations
 
                     b.HasKey("IdMascota");
 
-                    b.HasIndex("IdPropietario");
+                    b.HasIndex("IdAnimal");
 
                     b.ToTable("MascotaDb");
                 });
 
             modelBuilder.Entity("MascotaFeliz.app.dominio.Medicos", b =>
                 {
-                    b.Property<int>("IdMedico")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdMedico")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Especialidad")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
-                        .HasColumnName("Especialidad");
-
-                    b.Property<int?>("IdAnimal")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)")
-                        .HasColumnName("NombreMedico");
-
-                    b.Property<int>("TarjetaProfecional")
-                        .HasColumnType("int")
-                        .HasColumnName("TarjetaProfecional");
-
-                    b.HasKey("IdMedico");
-
-                    b.HasIndex("IdAnimal");
-
-                    b.ToTable("MedicosDb");
-                });
-
-            modelBuilder.Entity("MascotaFeliz.app.dominio.Persona", b =>
-                {
-                    b.Property<int>("IdPersona")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("IdPersona")
+                        .HasColumnName("Id")
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellido")
@@ -161,11 +122,31 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("Direccion");
 
-                    b.Property<string>("NombrePersona")
+                    b.Property<string>("Especialidad")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasColumnName("Especialidad");
+
+                    b.Property<int?>("IdAnimal")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdMedico")
+                        .HasColumnType("int")
+                        .HasColumnName("IdMedico");
+
+                    b.Property<int?>("Nit")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
-                        .HasColumnName("NombrePersona");
+                        .HasColumnName("Nombre");
+
+                    b.Property<int>("TarjetaProfecional")
+                        .HasColumnType("int")
+                        .HasColumnName("TarjetaProfecional");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
@@ -173,18 +154,28 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasColumnName("Telefono");
 
-                    b.HasKey("IdPersona");
+                    b.HasKey("Id");
 
-                    b.ToTable("PersonaDb");
+                    b.HasIndex("IdAnimal");
+
+                    b.HasIndex("Nit");
+
+                    b.ToTable("MedicosDb");
                 });
 
             modelBuilder.Entity("MascotaFeliz.app.dominio.Propietario", b =>
                 {
-                    b.Property<int>("IdPropietario")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdPropietario")
+                        .HasColumnName("Id")
                         .UseIdentityColumn();
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("Apellido");
 
                     b.Property<string>("Direccion")
                         .IsRequired()
@@ -192,19 +183,33 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("Direccion");
 
-                    b.Property<string>("NombrePropietario")
+                    b.Property<int?>("IdMascota")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IdPropietario")
+                        .HasColumnType("int")
+                        .HasColumnName("IdPropietario");
+
+                    b.Property<int?>("IdRegistroAtencion")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
-                        .HasColumnName("NombrePropietario");
+                        .HasColumnName("Nombre");
 
                     b.Property<string>("Telefono")
                         .IsRequired()
-                        .HasMaxLength(12)
-                        .HasColumnType("nvarchar(12)")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
                         .HasColumnName("Telefono");
 
-                    b.HasKey("IdPropietario");
+                    b.HasKey("Id");
+
+                    b.HasIndex("IdMascota");
+
+                    b.HasIndex("IdRegistroAtencion");
 
                     b.ToTable("PropietarioDb");
                 });
@@ -229,7 +234,7 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasColumnName("FechaRegistro");
 
-                    b.Property<int?>("IdPropietario")
+                    b.Property<int?>("IdSolicitudAtencio")
                         .HasColumnType("int");
 
                     b.Property<string>("NombreRegistro")
@@ -240,7 +245,7 @@ namespace MascotaFeliz.app.persistencia.Migrations
 
                     b.HasKey("IdRegistroAtencion");
 
-                    b.HasIndex("IdPropietario");
+                    b.HasIndex("IdSolicitudAtencio");
 
                     b.ToTable("RegistroAtencionDb");
                 });
@@ -265,6 +270,12 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasColumnName("FechaSolicitud");
 
+                    b.Property<int?>("IdAnimal")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("IdMascota")
+                        .HasColumnType("int");
+
                     b.Property<string>("NombreSolicitud")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -272,6 +283,10 @@ namespace MascotaFeliz.app.persistencia.Migrations
                         .HasColumnName("NombreSolicitud");
 
                     b.HasKey("IdSolicitudAtencion");
+
+                    b.HasIndex("IdAnimal");
+
+                    b.HasIndex("IdMascota");
 
                     b.ToTable("SolicitudAtencionDb");
                 });
@@ -294,25 +309,7 @@ namespace MascotaFeliz.app.persistencia.Migrations
                     b.ToTable("TipoAnimal");
                 });
 
-            modelBuilder.Entity("MascotaFeliz.app.dominio.Empresa", b =>
-                {
-                    b.HasOne("MascotaFeliz.app.dominio.Medicos", "Medicos")
-                        .WithMany()
-                        .HasForeignKey("IdMedico");
-
-                    b.Navigation("Medicos");
-                });
-
             modelBuilder.Entity("MascotaFeliz.app.dominio.Mascota", b =>
-                {
-                    b.HasOne("MascotaFeliz.app.dominio.Propietario", "Propietario")
-                        .WithMany()
-                        .HasForeignKey("IdPropietario");
-
-                    b.Navigation("Propietario");
-                });
-
-            modelBuilder.Entity("MascotaFeliz.app.dominio.Medicos", b =>
                 {
                     b.HasOne("MascotaFeliz.app.dominio.TipoAnimal", "TipoAnimal")
                         .WithMany()
@@ -321,13 +318,58 @@ namespace MascotaFeliz.app.persistencia.Migrations
                     b.Navigation("TipoAnimal");
                 });
 
+            modelBuilder.Entity("MascotaFeliz.app.dominio.Medicos", b =>
+                {
+                    b.HasOne("MascotaFeliz.app.dominio.TipoAnimal", "TipoAnimal")
+                        .WithMany()
+                        .HasForeignKey("IdAnimal");
+
+                    b.HasOne("MascotaFeliz.app.dominio.Empresa", "Empresa")
+                        .WithMany()
+                        .HasForeignKey("Nit");
+
+                    b.Navigation("Empresa");
+
+                    b.Navigation("TipoAnimal");
+                });
+
+            modelBuilder.Entity("MascotaFeliz.app.dominio.Propietario", b =>
+                {
+                    b.HasOne("MascotaFeliz.app.dominio.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("IdMascota");
+
+                    b.HasOne("MascotaFeliz.app.dominio.RegistroAtencion", "RegistroAtencion")
+                        .WithMany()
+                        .HasForeignKey("IdRegistroAtencion");
+
+                    b.Navigation("Mascota");
+
+                    b.Navigation("RegistroAtencion");
+                });
+
             modelBuilder.Entity("MascotaFeliz.app.dominio.RegistroAtencion", b =>
                 {
-                    b.HasOne("MascotaFeliz.app.dominio.Propietario", "Propietario")
+                    b.HasOne("MascotaFeliz.app.dominio.SolicitudAtencion", "SolicitudAtencion")
                         .WithMany()
-                        .HasForeignKey("IdPropietario");
+                        .HasForeignKey("IdSolicitudAtencio");
 
-                    b.Navigation("Propietario");
+                    b.Navigation("SolicitudAtencion");
+                });
+
+            modelBuilder.Entity("MascotaFeliz.app.dominio.SolicitudAtencion", b =>
+                {
+                    b.HasOne("MascotaFeliz.app.dominio.TipoAnimal", "TipoAnimal")
+                        .WithMany()
+                        .HasForeignKey("IdAnimal");
+
+                    b.HasOne("MascotaFeliz.app.dominio.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("IdMascota");
+
+                    b.Navigation("Mascota");
+
+                    b.Navigation("TipoAnimal");
                 });
 #pragma warning restore 612, 618
         }

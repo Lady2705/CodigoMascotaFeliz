@@ -7,7 +7,6 @@ namespace MascotaFeliz.app.persistencia.AppData
     //Propiedad
     public class EfAppContext: DbContext
     {
-        public DbSet<Persona> persona {get; set;}
         public DbSet<Medicos> medicos {get; set;}
         public DbSet<Propietario> propietario {get; set;}
         public DbSet<Empresa> empresa {get; set;}
@@ -20,7 +19,7 @@ namespace MascotaFeliz.app.persistencia.AppData
             //cadena de conexion
             if (!optionsBuilder.IsConfigured)
             {
-              optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=MascotaFeliz;Integrated Security=True");
+              optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog=MascotaFeliz3;Integrated Security=True");
             }
         }
     }

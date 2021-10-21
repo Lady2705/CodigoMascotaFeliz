@@ -1,0 +1,130 @@
+﻿@page
+@model MascotaFeliz.app.presentacion.page.MedicosModel
+@{
+}
+ <div class="white-text-container background-image-container" style="background-image: url('img/img-home.png')" >
+    
+    
+    <div class="container">
+        <div class="rowsd">
+           
+            <div class="col-md-6">
+                <h1>Contacta a nuestros Veterinarios</h1>
+                <p>contamos con un excelente equipo de médicos veterinarios las 24 horas
+                   para prestar un servicio oportuno. </p>
+                 <a href="/Medico/ListaMedicos" title="" class="btn btn-lg btn-primary">Aqui</a>
+                 
+            </div>
+
+          </div>
+        </div>
+      </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <div class="contenedor-formularios">
+      <div class="caja-contenedor">
+      <li class="tab1"><a href="#iniciar-sesion">Datos</a></li>
+      
+      </div>
+
+    
+  <div class="contenido-tab">
+    
+    
+      <h1>Medicos</h1>
+      <form action="#" method="POST">
+        <div class="contenedor-input">
+          <label>
+            Nombre del Medico <span class="req">*</span>
+          </label>
+          <input id="Nombre" type="text" required placeholder="Digite el Nombre Medico" class="form control">
+        </div>
+
+        <div class="contenedor-input">
+            <label>
+              Tarjeta Profecional <span class="req">*</span>
+            </label>
+            <input id="Tarjeta"type="text" required placeholder="Digite el Nombre Medico" class="form control">
+          </div> 
+          <br>
+          <br>
+        <div>
+        <button id="btnIngresar" type="submit" class="btn btn-primary" style="display: block;"> Ingresar</button>
+        <button id="btnActualizar" type="submit" class="btn btn-primary" style="display: none;">Actualizar</button>
+        <button id="btnEliminar" type="submit" class="btn btn-primary" onclick="LimpiarDatos">Eliminar</button>
+        </div>
+
+      </form>
+  
+        <br>
+      <br>
+      <br>
+      <br>
+      <br>
+       <br>
+      <br>
+      <br>
+      <br>
+      </div>
+</div>
+      <br>
+       <br>
+      <br>
+      <br>
+      <br>
+      <h1>lista de medicos</h1>
+      <br>
+      <br>
+    <table class="tabla-med">
+        <tr>
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>T.Profesional</th>
+          <th>Especialidad</th>
+          <th>Id.animal</th>
+        </tr> 
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          
+        </tr>
+        
+      </table>
+
+      <script>
+        function LimpiarDatos(){
+          $("#Nombre").val_('');
+          $("#Tarjeta").val_('');
+        }
+      </script>

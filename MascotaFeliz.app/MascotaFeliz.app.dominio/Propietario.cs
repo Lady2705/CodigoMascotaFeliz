@@ -10,31 +10,24 @@ using System.Text;
 namespace MascotaFeliz.app.dominio
 {
     [Table("PropietarioDb")]
-    public class Propietario
+    public class Propietario:Persona
     {
 
-        [Key]
         [Column("IdPropietario")]
 
         public int IdPropietario { get; set; }
 
-        [Required]
-        [Column("NombrePropietario")]
-        [StringLength(50,MinimumLength=5)]
+        [ForeignKey("IdRegistroAtencion")]
+       public virtual RegistroAtencion RegistroAtencion { get; set; }
+        
+        [ForeignKey("IdMascota")]
+        public virtual Mascota Mascota { get; set; }
 
-        public string NombrePropietario { get; set; }
+         public Propietario(int Id, string Nombre, string Apellido, string Direccion, string Telefono, int idPropietario):base(Id,  Nombre, Apellido, Direccion, Telefono)
+        {
+            this.IdPropietario = idPropietario;
 
-        [Required]
-        [Column("Telefono")]
-        [StringLength(12,MinimumLength=5)]
-
-        public string Telefono { get; set; }
-
-        [Required]
-        [Column("Direccion")]
-        [StringLength(50,MinimumLength=5)]
-
-        public string Direccion { get; set; }
+        }
 
         
 

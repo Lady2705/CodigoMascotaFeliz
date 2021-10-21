@@ -1,0 +1,25 @@
+﻿@page
+@model MascotaFeliz.app.presentacion.page.BusquedaMedicoModel
+@{
+}
+<h1>Nuestros Medicos Conoscalos</h1>
+
+<div>
+@Model.medico.IdMedico
+</div>
+<div>
+  @Model.medico.Nombre 
+</div>
+<div>
+  @Model.medico.Apellido  
+</div>
+<div>
+  @Model.medico.Direccion  
+</div>
+<div>
+ @Model.medico.Telefono   
+</div>
+<div>
+ @Model.medico.Especialidad   
+</div>
+<a asp-page="./ListaMedicos" class="btn-default">Regrasar a Listado Medicos</a>

@@ -5,11 +5,12 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
 {
     public interface iRepositorioMedico
     {
-        bool IngresarMedico(Medicos medicos);
+        Medicos IngresarMedico(Medicos medicos);
         bool BorrarMedico(int IdMedico);
-        bool ActualizarMedico(Medicos medicos);
+        Medicos ActualizarMedico(Medicos medicos);
         IEnumerable<Medicos> ConsultarMedicos();
-        Medicos ConsultarMedico(int IdMedico); 
+        Medicos ConsultarMedico(int IdMedico);
+        Medicos BuscarMedicoPorId(int IdMedico); 
          
     }
 }

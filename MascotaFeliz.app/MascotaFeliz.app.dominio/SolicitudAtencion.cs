@@ -32,6 +32,14 @@ namespace MascotaFeliz.app.dominio
 
        public string DetalleSolicitud { get; set; }
 
+       [ForeignKey("IdMascota")]
+
+        public virtual Mascota Mascota { get; set; }
+
+       [ForeignKey("IdAnimal")]
+
+        public virtual TipoAnimal TipoAnimal { get; set; }
+
         
     }
 }

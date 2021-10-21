@@ -57,7 +57,7 @@ namespace MascotaFeliz.app.persistencia.AppRepositorio
                 var BusquedaPropietario= contexto.propietario.SingleOrDefault(o=>o.IdPropietario==propietario.IdPropietario);
                 if(!(BusquedaPropietario==null))
                 { 
-                    BusquedaPropietario.NombrePropietario=propietario.NombrePropietario;
+                    BusquedaPropietario.Nombre=propietario.Nombre;
                     BusquedaPropietario.Telefono=propietario.Telefono;
                     BusquedaPropietario.Direccion=propietario.Direccion;
                     valorRetorno=true;

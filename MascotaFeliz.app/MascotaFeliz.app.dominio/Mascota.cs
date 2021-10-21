@@ -59,11 +59,12 @@ namespace MascotaFeliz.app.dominio
        [Required]
        public int FrecuenciaRespiratoria { get; set;}  
 
-       [ForeignKey("IdPropietario")]
+        
 
-       public virtual Propietario Propietario { get; set; } 
+       [ForeignKey("IdAnimal")]
+        public virtual TipoAnimal TipoAnimal { get; set; }
        
-    
+        
 
     }
 }

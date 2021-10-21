@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eEO/iNjEebKwQLmgl/PbDXwvR+7clZOpiuXdxdANQVk0QEgkuexSDojf58QSMzukHCg0zdFFQhlRK2+le1md9A==",
+  "dgSpecHash": "wr04MafKj6RXGNbjQtLx9+EypfS7ycGyUQrIg3f1/QLyiNbGPWRCAeZImRE5lmCXOciP9U3vllI+nbyXr0Oi7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.console\\MascotaFeliz.app.console.csproj",
+  "projectFilePath": "C:\\Users\\ladyr\\Documents\\mistic2021\\ciclo 3\\ds\\MascotaFeliz\\MascotaFeliz.app\\MascotaFeliz.app.console\\MascotaFeliz.app.console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ladyr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ladyr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

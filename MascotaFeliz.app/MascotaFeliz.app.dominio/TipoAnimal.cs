@@ -20,6 +20,7 @@ namespace MascotaFeliz.app.dominio
       [Required]
       public string Nombre { get; set; }
 
+      
 
     }
 }

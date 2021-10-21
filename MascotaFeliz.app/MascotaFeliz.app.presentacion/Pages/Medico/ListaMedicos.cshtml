@@ -1,0 +1,63 @@
+﻿@page
+@model MascotaFeliz.app.presentacion.page.ListaMedicosModel
+@{
+}
+<div>
+
+</div>
+
+<h1> Listados de Medicos</h1>
+<table class="table">
+    @foreach (var item in Model.Medicos)
+    {
+        <tr>
+            <td>
+                @item.IdMedico
+            </td>
+            <td>
+                @item.Nombre
+            </td>
+            <td>
+                @item.Apellido
+            </td>
+         
+            <td>
+                @item.Especialidad
+            </td>
+            <td>
+            <td>
+                <div>
+                    <a class="btn btn-primary"asp-page="./BusquedaMedico" asp-route-IdMedico="@item.IdMedico">Consultar</a>
+                </div>
+            </td>
+            
+                <td>
+                    <div>
+                    <a class="btn btn-primary"asp-page="./Eliminar" asp-route-IdMedico="@item.IdMedico">Eliminar</a>
+                    </div>
+                </td>
+                <td>
+                <div>
+                      <a class="btn btn-primary"asp-page="./IngresarMedico">Ingresar</a>
+                </div>
+                </td>
+                <td>
+                    <div>
+                      <a class="btn btn-primary"asp-page="./ActualizarMedico" asp-route-IdMedico="@item.IdMedico">Actualizar</a>
+                    </div>
+                </td>
+                 
+            </td>
+
+        </tr>
+    }
+</table>
+
+
+
+
+<div>
+
+</div>
+
+

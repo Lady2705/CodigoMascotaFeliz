@@ -1,0 +1,55 @@
+﻿@page
+@model MascotaFeliz.app.presentacion.page.IngresarMedicoModel
+@{
+}
+<h1>Ingresar Medicos</h1>
+<a asp-page="./ListaMedicos" class= "btn btn-primary" >Regresa al Listado de Medicos</a>
+<form method="post">
+    <div class="form-gruop">
+        <label asp-for="medicos.Id"></label>
+        <input id="Id" type="text" asp-for="medicos.Id" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.Nombre"></label>
+        <input id="Nombre" type="text" asp-for="medicos.Nombre" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.Apellido"></label>
+        <input id="Apellido" type="text" asp-for="medicos.Apellido" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.Direccion"></label>
+        <input id="Direccion" type="text" asp-for="medicos.Direccion" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.Telefono"></label>
+        <input id="Telefono" type="text" asp-for="medicos.Telefono" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.Especialidad"></label>
+        <input id="Especialidad" type="text" asp-for="medicos.Especialidad" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <label asp-for="medicos.TarjetaProfecional"></label>
+        <input id="TarjetaProfecional" type="text" asp-for="medicos.TarjetaProfecional" class="form-control">
+
+    </div>
+    <div class="form-gruop">
+        <button type="submit" class="btn btn-primary">Insertar Datos</button>
+        <button id="Cancelar" onclick="LimpiarFormulario();" type="submit" class="btn btn-primary">Cancelar</button>
+    </div>
+</form>
+
+<script>
+    function LimpiarFormulario(){
+        $("#Nombre").val('');
+        $("#TarjetaProfecional").val('');
+
+    }
+</script>
