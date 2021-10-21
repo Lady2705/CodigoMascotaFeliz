@@ -2,7 +2,21 @@
 @model MascotaFeliz.app.presentacion.page.MedicosModel
 @{
 }
- <div class="white-text-container background-image-container" style="background-image: url('img/img-home.png')" >
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MascotaFelizPresentacion.app.pagina</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/medico.css" />
+</head>
+
+<body>
+
+
+    <div class="white-text-container background-image-container" style="background-image: url('img/img-home.png')" >
     
     
     <div class="container">
@@ -10,6 +24,7 @@
            
             <div class="col-md-6">
                 <h1>Contacta a nuestros Veterinarios</h1>
+    
                 <p>contamos con un excelente equipo de médicos veterinarios las 24 horas
                    para prestar un servicio oportuno. </p>
                  <a href="/Medico/ListaMedicos" title="" class="btn btn-lg btn-primary">Aqui</a>
@@ -128,3 +143,7 @@
           $("#Tarjeta").val_('');
         }
       </script>
+
+
+</body>
+</html>

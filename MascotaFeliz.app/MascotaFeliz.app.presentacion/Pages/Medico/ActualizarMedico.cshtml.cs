@@ -29,7 +29,7 @@ namespace MascotaFeliz.app.presentacion.page
            
         }
         public IActionResult OnPost(){
-            medico=repositorio.ActualizarMedico(medicos);
+            medico=repositorio.ActualizarMedico(medico);
             if(medico==null){
                return RedirectToPage("/PaginaNoEncontrada");
            }

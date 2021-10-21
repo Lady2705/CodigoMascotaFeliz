@@ -52,3 +52,20 @@ C:\Users\ladyr\Documents\mistic2021\ciclo 3\ds\MascotaFeliz\MascotaFeliz.app\Mas
 C:\Users\ladyr\Documents\mistic2021\ciclo 3\ds\MascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\ref\MascotaFeliz.app.persistencia.dll
 C:\Users\ladyr\Documents\mistic2021\ciclo 3\ds\MascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.pdb
 C:\Users\ladyr\Documents\mistic2021\ciclo 3\ds\MascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.genruntimeconfig.cache
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.persistencia.deps.json
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.persistencia.runtimeconfig.json
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.persistencia.runtimeconfig.dev.json
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.persistencia.dll
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\ref\MascotaFeliz.app.persistencia.dll
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.persistencia.pdb
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.dominio.dll
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\bin\Debug\net5.0\MascotaFeliz.app.dominio.pdb
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.csproj.AssemblyReference.cache
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.AssemblyInfoInputs.cache
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.AssemblyInfo.cs
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.csproj.CoreCompileInputs.cache
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.dll
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\ref\MascotaFeliz.app.persistencia.dll
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.pdb
+C:\CodigoMascotaFeliz\MascotaFeliz.app\MascotaFeliz.app.persistencia\obj\Debug\net5.0\MascotaFeliz.app.persistencia.genruntimeconfig.cache

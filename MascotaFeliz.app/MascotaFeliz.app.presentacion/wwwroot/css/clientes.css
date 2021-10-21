@@ -1,0 +1,293 @@
+body{
+    background: rgb(209, 213, 248);
+}
+
+
+
+.contenedor-formularios{
+ 
+    background: rgb(40 80 227 / 42%);
+    padding: 40px;
+    max-width: 700px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(14, 6, 56, 0.3);
+    margin: 0 auto;
+    height: 950px;
+    
+   
+   
+   }
+   
+   #drawfs{
+    width: 250px;
+   }
+   .caja-contenedor{
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+   
+   }
+   
+      .tab1 a{
+       display: block;
+       text-decoration: none;
+       padding: 15 px;
+       background: rgb(17 15 54);
+       color: rgb(255, 255, 255);
+       font-size: 20px;
+       float: left;
+       width: 100%;
+       text-align: center;
+       transition: .5s ease;
+   
+       
+      }
+   
+   
+   
+       .tab1:hover{
+        background: rgb(28, 61, 114);
+        color: orange;   
+      }
+      .active a{
+       background: rgb(71, 127, 160);
+       color: cornsilk;
+    }  
+   
+    .contenido-tab {
+        height: 600px;
+   
+       }   
+       
+    h1{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        
+   
+   
+    }
+   
+    label{
+       
+       transform: translate(6px);
+       left: 13px;
+       color: rgb(17, 22, 22);
+       transition: all 0.25s ease;
+       backface-visibility: hidden;
+       pointer-events: none;
+       font-size: 20px;
+   }  
+       .req{
+           margin: 2px;
+           color:black;
+       }
+    
+   label.active {
+       transform: translate(50px);
+       left: 2px;
+       font-size: 14px;
+   
+       
+   }
+   
+   label.highlight {
+       color: blanchedalmond;
+   
+   }
+   
+   input {
+       font-size: 20px;
+       display: block;
+       width: 100%;
+       height: 100%;
+       padding: 5px 10px;
+       background: none;
+       border: 2px solid black;
+       border-top: none;
+       border-left: none;
+       border-right: none;
+       color: rgb(2, 2, 2);
+       border-radius: 5px;
+   
+   
+   }
+   
+   input:focus{
+       outline: none;
+       border-color: blue;
+   }
+   
+   .contenedor-input{
+       position: relative;
+       margin-bottom: 40px;
+   }
+   
+   
+   
+   .fila-arriba{
+       
+      
+       margin-right: 4%;
+   
+       
+   }
+   
+   
+   .fila-arriba:after{
+         content: "";
+         display: table;
+         clear: both;
+     }  
+   
+   
+   .fila-arriba > div:last-child{
+       margin: 0;
+   
+      }
+   
+      .button {
+       height: 45px;
+       border: 0;
+       outline: none;
+       border-radius: 5px;
+       cursor: pointer;
+       padding: inherit;
+       background: rgb(83, 83, 94);
+       color: white;
+       transition: all .5s ease;
+       -webkit-appearance: none;
+       float: left;
+       margin: 3px;
+       text-align: center;
+   
+   }
+   
+   .button:hover{
+       background: rgb(109, 40, 28);
+   
+   }
+   
+   .button:focus{
+       background: tomato;
+   
+   }
+   
+   .button-block {
+       display: block;
+       width: 145px;
+
+   }
+   
+   .forgot {
+       margin-top: -20px;
+       text-align: right;
+       margin-bottom: 20px;
+   }
+   
+   @media screen and (max-width: 500px) {
+       .fila-arriba{
+           width: 100%;
+   
+   
+       }
+       .fila-arriba :last-child{
+          margin-bottom: 40px; 
+       }
+   }
+
+
+
+.tabla-cli{
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 10%;
+}
+
+.tabla-cli, th, td {
+    border: 1px solid rgb(150, 127, 127);
+    border-collapse: collapse;
+    background-color: rgb(206, 202, 226);
+}
+
+th, td {
+    padding: 15px;
+}
+    
+    .page-banner{
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        border: 2px solid rebeccapurple;
+        height: 277px;
+        margin-bottom: 70px;
+       
+    }
+
+
+.pet{
+background-color: #fff;
+margin-top: 70px;
+}
+
+
+.titlepage h2 {
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: bold;
+    color: #000;
+    line-height: 55px;
+    font-size: 50px;
+}
+
+.pet_shop h3 {
+    font-size: 31px;
+    line-height: 35px;
+    color: #000;
+    font-weight: 500;
+    padding-bottom: 17px;
+    display: block;
+}
+
+
+.pet_shop p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.pet_img figure img {
+    width: 100%;
+}
+
+.pet_img span {
+    z-index: 999;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    right: 0;
+    top: 44%;
+    background: #131b87;
+    padding: 19px 27px;
+    border-radius: 88px;
+    margin-right: -20px;
+    position: absolute;
+    color: #fff;
+    font-size: 19px;
+}
+
+
+.margin_top span {
+    z-index: 999;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    right: 0;
+    top: 27%;
+    background: #131b87;
+    padding: 19px 25px;
+    border-radius: 88px;
+    margin-right: -20px;
+    position: absolute;
+    color: #fff;
+    font-size: 19px;
+}
+
